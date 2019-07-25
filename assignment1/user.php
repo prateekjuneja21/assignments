@@ -34,8 +34,7 @@ if (isset($_POST['btn-create-account'])) {
 
         mysqli_query($con, $sql);
         $last_inserted_id = mysqli_insert_id($con);
-        echo $last_inserted_id;exit();
-
+        echo $last_inserted_id;
     } else {
         echo "1";
     }
